@@ -1,0 +1,6 @@
+What is lifting state up in React JS?
+--> Sometimes we have state that's located within a particular component that also needs to be shared with siblings components.
+--> Instead of using entire an entire state management library like Redux or React context:
+1.We just life the state up to the closest common ancestor and 
+2. pass both the state variables the state values down as well as any callbacks to update that state.
+

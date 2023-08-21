@@ -3,14 +3,21 @@ import React, { useRef } from 'react'
 const Ref_hook = () => {
 
     const inputRef = useRef(null);
-    console.log(inputRef.current)
+
+   const onClick=()=>{
+    inputRef.current.focus();
+   inputRef.current.value ="";
+   }  
 
   return (
     <>
     <hr />
     <input type="text" 
-    value="Bhavana"
+    placeholder="Ex..."
     ref={inputRef}/>
+    <button
+    onClick={onClick}
+    >Change Name</button>
     </>
   )
 }
